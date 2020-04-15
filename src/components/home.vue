@@ -15,7 +15,8 @@
         >About</div>
       </div>
       <div class="content">
-        <div style="width:100px; height:100px; background:#ff9900">lalalalalalalala</div>
+        <!-- <div style="width:100px; height:100px; background:#ff9900">lalalalalalalala</div> -->
+        {{active}}
       </div>
     </div>
   </div>
