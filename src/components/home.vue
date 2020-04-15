@@ -1,25 +1,5 @@
 <template>
-  <div class="container center">
-    <div class="inner">
-      <!--This is a comment.  This is code that is not executed untill you remove the arrows -->
-      <div class="nav-bar center-v">
-        <div
-          @click="activate('home')"
-          :class="{'active':active == 'home'}"
-          class="nav-item center-v"
-        >Home</div>
-        <div
-          @click="activate('about')"
-          :class="{'active':active == 'about'}"
-          class="nav-item center-v"
-        >About</div>
-      </div>
-      <div class="content">
-        <!-- <div style="width:100px; height:100px; background:#ff9900">lalalalalalalala</div> -->
-        {{active}}
-      </div>
-    </div>
-  </div>
+  <div class="container center"></div>
 </template>
 
 <script>
