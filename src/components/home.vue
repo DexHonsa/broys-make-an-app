@@ -1,19 +1,15 @@
 <template>
-  <div class="container center"></div>
+  <div class="container">
+    <Navbar />
+  </div>
 </template>
-
 <script>
+import Navbar from "./navbar.vue";
+
 export default {
   name: "Home",
-  data() {
-    return {
-      active: "home"
-    };
-  },
-  methods: {
-    activate(page) {
-      this.active = page;
-    }
+  components: {
+    Navbar
   }
 };
 </script>
@@ -30,47 +26,11 @@ export default {
   --theme-lightGreen: #1fbad6;
   --theme-lightGreen30: #1fbad610;
 }
-.nav-item {
-  padding: 15px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: 300;
-}
-.nav-item:hover {
-  background: #ffffff30;
-}
-.nav-item.active {
-  background: #ffffff30;
-}
-.content {
-  padding: 15px;
-  margin-top: 15px;
-  font-size: 14pt;
-  text-align: center;
-}
-.inner {
-  height: 500px;
-  width: 800px;
-  background: var(--theme-dark-blue);
-}
 .container {
   background: var(--theme-dark-blue-gradient);
   color: var(--theme-text);
   overflow: auto;
   height: 100vh;
   font-size: 15pt;
-}
-.center-h {
-  display: flex;
-  justify-content: center;
-}
-.center-v {
-  display: flex;
-  align-items: center;
-}
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 </style>
