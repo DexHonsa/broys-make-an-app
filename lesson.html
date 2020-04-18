@@ -1,15 +1,25 @@
 <html>
-<title>Lesson 1</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Lesson 1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+</head>
+
 <style>
     @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap');
 
     html,
     body {
-        margin: 0;
         font-family: 'Raleway';
+        margin: 0;
         padding: 0;
         background: #34363b;
+        /* hi im a note */
     }
 
     .container {
@@ -17,6 +27,7 @@
         display: flex;
         align-items: center;
         padding: 50px;
+        box-sizing: border-box;
         position: relative;
         flex-wrap: wrap;
     }
@@ -36,20 +47,20 @@
     }
 
     .panel-top {
-        height: 35px;
+        height: 45px;
         display: flex;
-        text-transform: capitalize;
-        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: lighter;
         align-items: center;
-        padding: 15px;
-        font-size: 14pt;
+        padding: 0px 15px;
+        font-size: 12pt;
         color: #fff;
         border-bottom: solid 1px #ffffff30;
     }
 
     .panel-content {
         padding: 15px;
-        color: #7b808a
     }
 
     .line-item {
@@ -69,7 +80,7 @@
         border-radius: 50px;
         background: #ffffff30;
         margin-right: 10px;
-        transition: all .3s ease;
+        transition: .3s ease;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -89,19 +100,17 @@
         flex: 1;
         transition: all .3s ease;
         margin-bottom: 10px;
-        width: 100%;
     }
 
     .line-item .lines .line:last-of-type {
         margin-bottom: 0px;
     }
 
-    .line-item:hover .circle,
-    .line-item:hover .lines .line {
+    .line-item:hover .circle {
         background: rgb(120, 255, 153);
     }
 
-    @media(max-width:728px) {
+    @media(max-width:828px) {
         .panel {
             margin-right: 0px;
         }
@@ -109,10 +118,12 @@
 </style>
 
 <body>
+    <!-- Hello note -->
     <div class="container">
         <div class="panel">
             <div class="panel-top">One</div>
             <div class="panel-content">
+
                 <div class="line-item">
                     <div class="circle">
                         <i class="fa fa-user-circle"></i>
